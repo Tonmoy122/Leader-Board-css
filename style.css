@@ -44,9 +44,9 @@ main{
     align-items: center;
 }
 .player:hover{
-    background-color: rgb(167, 238, 214);
-    border: 2px solid rgb(205, 125, 21);
-    border-radius: 5px;
+    background-color: rgb(219, 219, 196);
+    border: 5px solid wheat);
+    border-radius: 23px;
     width: 200px;
 }
 hr{
@@ -79,4 +79,46 @@ hr{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 26px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:24px ;
+}
+
+
+
+.courses .course img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.field{
+    color: #ffc014;
+}
+.fa-star.emty{
+    color: #AEAEAE;
+}
+
+_______/* media queries */_______
+
+@media only screen and (max-width:688px) {
+    .container{
+        width:100%
+    } 
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    }
+
 }
