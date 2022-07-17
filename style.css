@@ -7,7 +7,8 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .top-player{
     margin-bottom: 30px;
@@ -21,6 +22,8 @@ main{
     background-color: #ffff;
     width: 870px;
     padding:33px 30px   ;
+    margin-top: 21px;
+    border-radius: 5px;
 
 }
 .players{
@@ -39,6 +42,12 @@ main{
 .player{
     display: flex;
     align-items: center;
+}
+.player:hover{
+    background-color: rgb(167, 238, 214);
+    border: 2px solid rgb(205, 125, 21);
+    border-radius: 5px;
+    width: 200px;
 }
 hr{
     border: 1px solid rgb(172, 220, 238);
